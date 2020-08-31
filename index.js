@@ -22,7 +22,7 @@ $("body").keydown(function() {
 
 // to handel the user clicks sand add to the userClickedPattern array
 $(".btn").click(function() {
-  var userchossenButton = $(this).attr("id");;
+  var userchossenButton = $(this).attr("id");
   userClickedPattern.push(userchossenButton);
 
   playSound(userchossenButton);
@@ -37,7 +37,6 @@ function check(currentlevel) {
 
   if (pattern[currentlevel] === userClickedPattern[currentlevel]) {
     console.log("sucess");
-
 
     if (pattern.length === userClickedPattern.length) {
       setTimeout(function() {
