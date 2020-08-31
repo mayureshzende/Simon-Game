@@ -70,7 +70,7 @@ function random() {
   var randomColor = buttonColors[randomNumber];
   pattern.push(randomColor);
 
-  $("#" + randomColor).fadeOut(100).fadeIn(100);
+  $("#" + randomColor).fadeOut(200).fadeIn(200);
 
 playSound(randomColor);
 }
@@ -88,7 +88,7 @@ function press(curentColor) {
   $("#" + curentColor).addClass("pressed");
   setTimeout(function() {
     $("#" + curentColor).removeClass("pressed");
-  }, 100);
+  }, 200);
 
 }
 
